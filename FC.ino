@@ -1,4 +1,4 @@
-uint8_t spec_data;
+char spec_data;
 
 void setup() {
   // put your setup code here, to run once:
