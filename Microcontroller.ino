@@ -75,13 +75,13 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   readSpectrometer(PIN_SPEC1_START, PIN_SPEC1_CLK, PIN_SPEC1_VIDEO, data_1);
- for(int i = 0; i < 288; i++) {
-  num = (char)data_1[i];
-  Serial1.print(num);
-  if(i != 287) {
-   Serial1.print(", ");
+  for(int i = 0; i < 288; i++) {
+    num = (char)data_1[i];
+    Serial1.print(num);
+    if(i != 287) {
+        Serial1.print(", ");
+    }
   }
- }
- Serial1.print('\n');
- delay(1000);
+  Serial1.print('\n');
+  delay(1000);
 }
