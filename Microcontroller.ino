@@ -79,7 +79,7 @@ void loop() {
     num = (char)data_1[i];
     Serial1.print(num);
     if(i != 287) {
-        Serial1.print(", ");
+        Serial1.print(",");
     }
   }
   Serial1.print('\n');
