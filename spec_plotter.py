@@ -7,13 +7,13 @@ from time import sleep
 plt.style.use('ggplot')
 
 if len(sys.argv) == 1:
-    arduino_port = "/dev/cu.usbmodem47110001"
+    feather_port = "COM13"
 else:
-    arduino_port = sys.argv[1]
-baud = 115200
+    feather_port = sys.argv[1]
+baud = 9600
 
-ser = serial.Serial(arduino_port, baud)
-print("Connected to Arduino port: " + arduino_port)
+ser = serial.Serial(feather_port, baud)
+print("Connected to Arduino port: " + feather_port)
 
 channels = 288
 sleep(1)  # Pause 1 second for suspense
